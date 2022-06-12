@@ -1,6 +1,6 @@
 import streamlit as st
 import requests
-from streamlit_lottie import st_lottie
+# from streamlit_lottie import st_lottie
 from pydoc import visiblename
 from bs4 import BeautifulSoup
 from PIL import Image
@@ -162,7 +162,9 @@ with st.container():
     with left_column:
         st.title("I can tell if it will be a good Sunset")
     with right_column:
-        st_lottie(sun_animation,height=300, key="coding")
+        pass
+#         st_lottie(sun_animation,height=300, key="coding")
+
 
 with st.container():
     st.write("---")
