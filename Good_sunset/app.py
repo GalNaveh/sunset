@@ -136,7 +136,7 @@ def condition_calc(conditions):
 # ok = Image.open(r'C:\Users\galna\OneDrive\Documents\Good_sunset\ok.jpg')
 # trash = Image.open(r'C:\Users\galna\OneDrive\Documents\Good_sunset\bad.jpg')
 
-amazing = Image.open(r'sunset\amazing.jpg')
+amazing = Image.open('sunset\amazing.jpg')
 good = Image.open(r'https://github.com/GalNaveh/sunset/blob/main/Good_sunset/good.jpg','rb')
 ok = Image.open(r'https://github.com/GalNaveh/sunset/blob/main/Good_sunset/ok.jpg')
 trash = Image.open(r'https://github.com/GalNaveh/sunset/blob/main/Good_sunset/bad.jpg')
