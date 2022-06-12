@@ -4,6 +4,7 @@ import requests
 from pydoc import visiblename
 from bs4 import BeautifulSoup
 from PIL import Image
+import os
 
 url = "https://weather.com/weather/today/l/-31.95,115.86?par=google"
 
@@ -136,10 +137,18 @@ def condition_calc(conditions):
 # ok = Image.open(r'C:\Users\galna\OneDrive\Documents\Good_sunset\ok.jpg')
 # trash = Image.open(r'C:\Users\galna\OneDrive\Documents\Good_sunset\bad.jpg')
 
-amazing = Image.open('sunset/main/Good_sunset/amazing.jpg')
-good = Image.open(r'https://github.com/GalNaveh/sunset/blob/main/Good_sunset/good.jpg','rb')
-ok = Image.open(r'https://github.com/GalNaveh/sunset/blob/main/Good_sunset/ok.jpg')
-trash = Image.open(r'https://github.com/GalNaveh/sunset/blob/main/Good_sunset/bad.jpg')
+dirname = os.path.dirname(__file__)
+filename = os.path.join(dirname, 'your relative path to the file')
+amazing_filename = os.path.join(dirname, 'amazing.jpg')
+good_filename = os.path.join(dirname, 'good.jpg')
+ok_filename = os.path.join(dirname, 'ok.jpg')
+trash_filename = os.path.join(dirname, 'trash.jpg')
+
+amazing = Image.open(amazing_filename)
+good = Image.open(good_filename)
+ok = Image.open(ok_filename)
+trash = Image.open(trash_filename)
+
 
 amazing_text = 'godly sunset incoming'
 good_text = "bro its going to be a good one"
