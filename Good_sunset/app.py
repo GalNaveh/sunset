@@ -142,7 +142,7 @@ filename = os.path.join(dirname, 'your relative path to the file')
 amazing_filename = os.path.join(dirname, 'amazing.jpg')
 good_filename = os.path.join(dirname, 'good.jpg')
 ok_filename = os.path.join(dirname, 'ok.jpg')
-trash_filename = os.path.join(dirname, 'trash.jpg')
+trash_filename = os.path.join(dirname, 'bad.jpg')
 
 amazing = Image.open(amazing_filename)
 good = Image.open(good_filename)
