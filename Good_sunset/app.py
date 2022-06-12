@@ -1,6 +1,6 @@
 import streamlit as st
 import requests
-from streamlit_lottie import st_lottie
+from streamlit-lottie import st_lottie
 from pydoc import visiblename
 from bs4 import BeautifulSoup
 from PIL import Image
